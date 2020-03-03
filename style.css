@@ -13,6 +13,20 @@ html {
     padding: 0;
 }
 
+@import url(//db.onlinewebfonts.com/c/e33b1a09897268653accb3debb07e7ac?family=Champion);
+@font-face {
+    font-family: "Champion";
+    src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot");
+    src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.svg#Champion") format("svg");
+}
+
+@font-face {
+    font-family: "faction_personalblack";
+    src: url('css/fonts/factionblack-personal-webfont.woff2') format('woff2'), url('css/fonts/factionblack-personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -45,4 +59,16 @@ html {
 
 .yellow-rotated-box p {
     /* transform: skew(-20deg); */
+}
+
+.prueba {
+    font-family: "Champion";
+}
+
+.prueba2 {
+    font-family: 'Space Mono', sans-serif;
+}
+
+.prueba3 {
+    font-family: "faction_personalblack";
 }
