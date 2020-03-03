@@ -12,3 +12,37 @@ html {
     margin: 0;
     padding: 0;
 }
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "three-styles""header-text";
+    padding: 5vw;
+}
+
+.three-styles {
+    grid-area: three-styles;
+}
+
+.header-text {
+    grid-area: header-text;
+}
+
+.yellow-box {
+    background: #ffb33d;
+    width: 150px;
+    height: 100px;
+}
+
+.parallelogram {
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(-20deg);
+}
+
+.yellow-rotated-box p {
+    /* transform: skew(-20deg); */
+}
