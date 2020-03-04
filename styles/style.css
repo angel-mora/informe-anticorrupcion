@@ -13,4 +13,40 @@ header {
 .mono {
   font-family: "Space Mono", sans-serif;
 }
+
+.white {
+  color: #fff;
+}
+
+.yellow {
+  color: #ffb33d;
+}
+
+.pink {
+  color: #ed4462;
+}
+
+.royal {
+  color: #1a1b2f;
+}
+
+.black {
+  color: #000;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-yellow {
+  background-color: #ffb33d;
+}
+
+.background-pink {
+  background-color: #ed4462;
+}
+
+.background-royal {
+  background-color: #1a1b2f;
+}
 /*# sourceMappingURL=style.css.map */

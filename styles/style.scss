@@ -4,6 +4,11 @@ $person: "faction_personalblack",
 sans-serif;
 $mono: "Space Mono",
 sans-serif;
+$white: #fff;
+$yellow: #ffb33d;
+$pink: #ed4462;
+$royal: #1a1b2f;
+$black: #000;
 header {
     background: lightblue;
 }
@@ -18,4 +23,40 @@ header {
 
 .mono {
     font-family: $mono;
+}
+
+.white {
+    color: $white;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.pink {
+    color: $pink;
+}
+
+.royal {
+    color: $royal;
+}
+
+.black {
+    color: $black;
+}
+
+.background-white {
+    background-color: $white;
+}
+
+.background-yellow {
+    background-color: $yellow;
+}
+
+.background-pink {
+    background-color: $pink;
+}
+
+.background-royal {
+    background-color: $royal;
 }
