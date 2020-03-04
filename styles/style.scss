@@ -1,0 +1,21 @@
+$champ: "Champion",
+sans-serif;
+$person: "faction_personalblack",
+sans-serif;
+$mono: "Space Mono",
+sans-serif;
+header {
+    background: lightblue;
+}
+
+.champ {
+    font-family: $champ;
+}
+
+.person {
+    font-family: $person;
+}
+
+.mono {
+    font-family: $mono;
+}

@@ -8,7 +8,7 @@ Fuentes:
 - Faction: es descargable
 
 
-font-family: 'Space Mono', sans-serif;
+
 
 
 
