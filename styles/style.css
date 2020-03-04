@@ -49,4 +49,41 @@ header {
 .background-royal {
   background-color: #1a1b2f;
 }
+
+.yellow-box {
+  background-color: #ffb33d;
+}
+
+.royal-box {
+  background-color: #1a1b2f;
+}
+
+.royal-star {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #1a1b2f;
+  position: relative;
+}
+
+.royal-star:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #1a1b2f;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+.yellow-ellipse {
+  width: 25vw;
+  height: 10vw;
+  background: #ffb33d;
+  border-radius: 25vw / 15vw;
+  z-index: -1;
+}
 /*# sourceMappingURL=style.css.map */
