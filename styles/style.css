@@ -86,4 +86,10 @@ header {
   border-radius: 25vw / 15vw;
   z-index: -1;
 }
+
+.header-mono-font-style {
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

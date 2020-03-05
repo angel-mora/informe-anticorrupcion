@@ -43,32 +43,20 @@ html {
     grid-area: header-text;
 }
 
-.yellow-box {
-    background: #ffb33d;
-    width: 150px;
-    height: 100px;
-}
-
 .parallelogram {
     -webkit-transform: skew(20deg);
     -moz-transform: skew(20deg);
     -ms-transform: skew(20deg);
     -o-transform: skew(20deg);
     transform: skew(-20deg);
+    width: 20vw;
+    height: 10vw;
 }
 
-.yellow-rotated-box p {
-    /* transform: skew(-20deg); */
-}
-
-.prueba {
-    font-family: "Champion";
-}
-
-.prueba2 {
-    font-family: "Space Mono", sans-serif;
-}
-
-.prueba3 {
-    font-family: "faction_personalblack";
+.parallelogram p {
+    transform: skew(20deg);
+    position: absolute;
+    top: 0.8vw;
+    right: 1.8vw;
+    text-align: right;
 }
