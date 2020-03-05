@@ -1,3 +1,17 @@
+@import url(//db.onlinewebfonts.com/c/e33b1a09897268653accb3debb07e7ac?family=Champion);
+@font-face {
+    font-family: "Champion";
+    src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot");
+    src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.svg#Champion") format("svg");
+}
+
+@font-face {
+    font-family: "faction_personalblack";
+    src: url('../css/fonts/factionblack-personal-webfont.woff2') format('woff2'), url('../css/fonts/factionblack-personal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $champ: "Champion",
 sans-serif;
 $person: "faction_personalblack",
@@ -9,8 +23,19 @@ $yellow: #ffb33d;
 $pink: #ed4462;
 $royal: #1a1b2f;
 $black: #000;
-header {
-    background: lightblue;
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 .champ {
@@ -69,27 +94,6 @@ header {
     background-color: $royal;
 }
 
-.royal-star {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid $royal;
-    position: relative;
-}
-
-.royal-star:after {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid $royal;
-    position: absolute;
-    content: "";
-    top: 30px;
-    left: -50px;
-}
-
 .yellow-ellipse {
     width: 25vw;
     height: 10vw;
@@ -98,10 +102,235 @@ header {
     z-index: -1;
 }
 
-.header-mono-font-style {
-    font-size: 3vw;
-    font-weight: bold;
-    font-style: italic;
+.header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    .three-styles {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 15vw;
+    }
+    .parallelogram {
+        -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        transform: skew(-20deg);
+        width: 22vw;
+        height: 10vw;
+        p {
+            transform: skew(20deg);
+            position: absolute;
+            top: 0.8vw;
+            right: 1.8vw;
+            text-align: right;
+            padding: 0 2vw;
+        }
+    }
+    .header-text {
+        width: 60vw;
+        margin: -2vw auto;
+        p {
+            font-size: 3vw;
+        }
+    }
+    .header-mono-font-style {
+        font-size: 3vw;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .flex-anti {
+        font-size: 14vw;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        padding: 0;
+        justify-content: center;
+    }
+    .flex-corruption {
+        font-size: 9vw;
+        margin-top: -4.5vw;
+    }
 }
 
-// .section1-mono-font-size
+.section1 {
+    display: flex;
+    flex-direction: column;
+    .section1-box {
+        margin: 0 auto;
+    }
+    .section1-mono-font-style {
+        font-size: 3vw;
+        font-weight: bold;
+        font-style: italic;
+        padding-top: 2vw;
+    }
+    .section1-champ-style {
+        font-size: 20vw;
+        margin-top: -3vw;
+    }
+    .section1-transformed-box {
+        width: 20vw;
+        transform: rotate(-10deg);
+        font-weight: bold;
+        font-style: italic;
+        font-size: 6vw;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        top: -7vw;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    .section-1-person-style {
+        font-size: 18vw;
+        margin-top: -11vw;
+        text-align: center;
+    }
+}
+
+.section2 {
+    .section2-mono {
+        height: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 4vw;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+    .section2-1stbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        margin-top: 3vw;
+        .mono {
+            font-size: 2.5vw;
+            font-weight: bold;
+        }
+        .chihuahua {
+            transform: rotate(-1deg);
+            margin: -3vw;
+        }
+        .royal-box {
+            width: 40vw;
+            height: 20vw;
+        }
+        .yellow-box {
+            padding: 2vw 2vw;
+            transform: rotate(-2deg);
+            position: relative;
+            top: -3vw;
+        }
+        .person,
+        .champ {
+            display: flex;
+            justify-content: center;
+            font-weight: lighter;
+        }
+    }
+    .section2-2ndbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 90vw;
+        margin-top: -8vw;
+        .mono {
+            font-size: 2.7vw;
+            align-self: flex-end;
+            text-align: right;
+        }
+        .royal-box {
+            width: 40vw;
+        }
+        .person,
+        .champ {
+            display: flex;
+            justify-content: center;
+        }
+        #se {
+            text-align: center;
+            margin-top: -6vw;
+            margin-bottom: -4vw;
+            font-size: 3vw;
+        }
+    }
+    .section2-3rdstar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        .yellow-box {
+            width: 65vw;
+            font-size: 2.8vw;
+            margin: 8vw auto;
+            padding: 0;
+            transform: rotate(-3deg);
+            text-align: center;
+            z-index: 2;
+        }
+        .royal-star {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid $royal;
+            position: relative;
+        }
+        .royal-star:after {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid $royal;
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -50px;
+        }
+    }
+    .mono {
+        text-align: right;
+        padding: 3.5vw;
+        font-size: 2.5vw;
+        font-style: italic;
+    }
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    .champ {
+        text-align: center;
+        font-size: 12vw;
+        font-weight: lighter;
+        padding: 3vw;
+    }
+    .mono {
+        text-align: center;
+        font-size: 2.7vw;
+        margin-top: -2vw;
+        margin-bottom: 4vw;
+        font-style: italic;
+    }
+}
+
+.section4 {}
+
+.section5 {}
+
+.section6 {}
+
+.section7 {}
+
+.section8 {}
+
+.section9 {}

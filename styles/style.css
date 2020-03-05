@@ -1,5 +1,32 @@
-header {
-  background: lightblue;
+@import url(//db.onlinewebfonts.com/c/e33b1a09897268653accb3debb07e7ac?family=Champion);
+@font-face {
+  font-family: "Champion";
+  src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot");
+  src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.svg#Champion") format("svg");
+}
+
+@font-face {
+  font-family: "faction_personalblack";
+  src: url("../css/fonts/factionblack-personal-webfont.woff2") format("woff2"), url("../css/fonts/factionblack-personal-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .champ {
@@ -58,7 +85,287 @@ header {
   background-color: #1a1b2f;
 }
 
-.royal-star {
+.yellow-ellipse {
+  width: 25vw;
+  height: 10vw;
+  background: #ffb33d;
+  border-radius: 25vw / 15vw;
+  z-index: -1;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5vw;
+}
+
+.header-container .three-styles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  left: 15vw;
+}
+
+.header-container .parallelogram {
+  -webkit-transform: skew(20deg);
+  transform: skew(-20deg);
+  width: 22vw;
+  height: 10vw;
+}
+
+.header-container .parallelogram p {
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  position: absolute;
+  top: 0.8vw;
+  right: 1.8vw;
+  text-align: right;
+  padding: 0 2vw;
+}
+
+.header-container .header-text {
+  width: 60vw;
+  margin: -2vw auto;
+}
+
+.header-container .header-text p {
+  font-size: 3vw;
+}
+
+.header-container .header-mono-font-style {
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header-container .flex-anti {
+  font-size: 14vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container .flex-corruption {
+  font-size: 9vw;
+  margin-top: -4.5vw;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1 .section1-box {
+  margin: 0 auto;
+}
+
+.section1 .section1-mono-font-style {
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 2vw;
+}
+
+.section1 .section1-champ-style {
+  font-size: 20vw;
+  margin-top: -3vw;
+}
+
+.section1 .section1-transformed-box {
+  width: 20vw;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 6vw;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -7vw;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.section1 .section-1-person-style {
+  font-size: 18vw;
+  margin-top: -11vw;
+  text-align: center;
+}
+
+.section2 .section2-mono {
+  height: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .section2-mono p {
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section2 .section2-1stbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  margin-top: 3vw;
+}
+
+.section2 .section2-1stbox .mono {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.section2 .section2-1stbox .chihuahua {
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  margin: -3vw;
+}
+
+.section2 .section2-1stbox .royal-box {
+  width: 40vw;
+  height: 20vw;
+}
+
+.section2 .section2-1stbox .yellow-box {
+  padding: 2vw 2vw;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  position: relative;
+  top: -3vw;
+}
+
+.section2 .section2-1stbox .person,
+.section2 .section2-1stbox .champ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: lighter;
+}
+
+.section2 .section2-2ndbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90vw;
+  margin-top: -8vw;
+}
+
+.section2 .section2-2ndbox .mono {
+  font-size: 2.7vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+.section2 .section2-2ndbox .royal-box {
+  width: 40vw;
+}
+
+.section2 .section2-2ndbox .person,
+.section2 .section2-2ndbox .champ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .section2-2ndbox #se {
+  text-align: center;
+  margin-top: -6vw;
+  margin-bottom: -4vw;
+  font-size: 3vw;
+}
+
+.section2 .section2-3rdstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+.section2 .section2-3rdstar .yellow-box {
+  width: 65vw;
+  font-size: 2.8vw;
+  margin: 8vw auto;
+  padding: 0;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  text-align: center;
+  z-index: 2;
+}
+
+.section2 .section2-3rdstar .royal-star {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -67,7 +374,7 @@ header {
   position: relative;
 }
 
-.royal-star:after {
+.section2 .section2-3rdstar .royal-star:after {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -79,17 +386,35 @@ header {
   left: -50px;
 }
 
-.yellow-ellipse {
-  width: 25vw;
-  height: 10vw;
-  background: #ffb33d;
-  border-radius: 25vw / 15vw;
-  z-index: -1;
+.section2 .mono {
+  text-align: right;
+  padding: 3.5vw;
+  font-size: 2.5vw;
+  font-style: italic;
 }
 
-.header-mono-font-style {
-  font-size: 3vw;
-  font-weight: bold;
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3 .champ {
+  text-align: center;
+  font-size: 12vw;
+  font-weight: lighter;
+  padding: 3vw;
+}
+
+.section3 .mono {
+  text-align: center;
+  font-size: 2.7vw;
+  margin-top: -2vw;
+  margin-bottom: 4vw;
   font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
