@@ -28,6 +28,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 *,
@@ -36,7 +37,6 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .champ {
@@ -184,11 +184,11 @@ html {
         position: relative;
         top: -7vw;
         margin: 0 auto;
-        z-index: 2;
+        z-index: 99;
     }
     .section-1-person-style {
         font-size: 18vw;
-        margin-top: -11vw;
+        margin-top: -8vw;
         text-align: center;
     }
 }
@@ -221,7 +221,7 @@ html {
             margin: -3vw;
         }
         .royal-box {
-            width: 40vw;
+            width: 45vw;
             height: 20vw;
         }
         .yellow-box {
@@ -236,6 +236,18 @@ html {
             justify-content: center;
             font-weight: lighter;
         }
+        .person {
+            font-size: 8vw;
+        }
+        .person:first-child {
+            margin-left: 2vw;
+            margin-top: 2vw;
+            margin-bottom: -2vw;
+            margin-right: 8vw;
+        }
+        .champ {
+            font-size: 7vw;
+        }
     }
     .section2-2ndbox {
         display: flex;
@@ -248,20 +260,36 @@ html {
             font-size: 2.7vw;
             align-self: flex-end;
             text-align: right;
+            margin-bottom: -3vw;
         }
         .royal-box {
-            width: 40vw;
+            width: 55vw;
+            height: 25vw;
         }
         .person,
         .champ {
             display: flex;
             justify-content: center;
         }
+        .champ {
+            font-size: 9vw;
+            margin-bottom: 1vw;
+        }
+        .person {
+            font-size: 8vw;
+            margin-left: 4vw;
+            margin-top: 3vw;
+            margin-right: 4vw;
+        }
+        #section2-span {
+            margin-bottom: 3vw;
+        }
         #se {
             text-align: center;
-            margin-top: -6vw;
-            margin-bottom: -4vw;
             font-size: 3vw;
+            padding: 0;
+            margin-top: -7vw;
+            margin-bottom: -2vw;
         }
     }
     .section2-3rdstar {

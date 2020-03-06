@@ -18,6 +18,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -27,7 +28,6 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .champ {
@@ -214,12 +214,12 @@ html {
   position: relative;
   top: -7vw;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 99;
 }
 
 .section1 .section-1-person-style {
   font-size: 18vw;
-  margin-top: -11vw;
+  margin-top: -8vw;
   text-align: center;
 }
 
@@ -272,7 +272,7 @@ html {
 }
 
 .section2 .section2-1stbox .royal-box {
-  width: 40vw;
+  width: 45vw;
   height: 20vw;
 }
 
@@ -293,6 +293,21 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: lighter;
+}
+
+.section2 .section2-1stbox .person {
+  font-size: 8vw;
+}
+
+.section2 .section2-1stbox .person:first-child {
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-bottom: -2vw;
+  margin-right: 8vw;
+}
+
+.section2 .section2-1stbox .champ {
+  font-size: 7vw;
 }
 
 .section2 .section2-2ndbox {
@@ -318,10 +333,12 @@ html {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: right;
+  margin-bottom: -3vw;
 }
 
 .section2 .section2-2ndbox .royal-box {
-  width: 40vw;
+  width: 55vw;
+  height: 25vw;
 }
 
 .section2 .section2-2ndbox .person,
@@ -334,11 +351,28 @@ html {
           justify-content: center;
 }
 
+.section2 .section2-2ndbox .champ {
+  font-size: 9vw;
+  margin-bottom: 1vw;
+}
+
+.section2 .section2-2ndbox .person {
+  font-size: 8vw;
+  margin-left: 4vw;
+  margin-top: 3vw;
+  margin-right: 4vw;
+}
+
+.section2 .section2-2ndbox #section2-span {
+  margin-bottom: 3vw;
+}
+
 .section2 .section2-2ndbox #se {
   text-align: center;
-  margin-top: -6vw;
-  margin-bottom: -4vw;
   font-size: 3vw;
+  padding: 0;
+  margin-top: -7vw;
+  margin-bottom: -2vw;
 }
 
 .section2 .section2-3rdstar {
