@@ -36,6 +36,7 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .champ {
@@ -333,4 +334,105 @@ html {
 
 .section8 {}
 
-.section9 {}
+.royal-box {
+    display: flex;
+    flex-direction: column;
+    .yellow-box {
+        width: 50vw;
+        padding-top: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10vw;
+        font-weight: lighter;
+        margin: 3vw auto;
+    }
+    .mono {
+        margin: 0 auto;
+        font-size: 3vw;
+        font-style: italic;
+        padding: 2vw;
+        text-align: center;
+    }
+    .mono:nth-child(5) {
+        margin: 0;
+        text-align: left;
+        position: relative;
+        left: 15vw;
+        bottom: -6vw;
+    }
+    .champ {
+        margin: 0 auto;
+        font-size: 12vw;
+        font-weight: lighter;
+    }
+    #impunidad {
+        font-size: 23vw;
+    }
+}
+
+.background-yellow {
+    display: flex;
+    flex-direction: column;
+    .champ {
+        padding: 3vw;
+        margin: 0 auto;
+        font-size: 10vw;
+        font-weight: lighter;
+    }
+    .mono-pink {
+        margin: 0 auto;
+        font-size: 10vw;
+        font-weight: bold;
+    }
+    .sub {
+        font-size: 3vw;
+        font-style: italic;
+        margin-bottom: -3.5vw;
+    }
+    .one {
+        margin-left: 16.5vw;
+    }
+    .two {
+        margin-left: 22vw;
+        margin-top: 4vw;
+    }
+    .three {
+        text-align: right;
+        margin-right: 22vw;
+        margin-top: -2.7vw;
+        margin-bottom: 6vw;
+        font-size: 2.7vw;
+    }
+    .four {
+        margin-left: 10vw;
+    }
+    .five {
+        text-align: right;
+        margin-right: 9vw;
+        margin-top: -3vw;
+        margin-bottom: 6vw;
+    }
+    .six {
+        text-align: right;
+        margin-right: 12vw;
+        margin-top: -3vw;
+        margin-bottom: 6vw;
+    }
+    .seven {
+        text-align: right;
+        margin-right: 10vw;
+        margin-top: -3vw;
+        margin-bottom: 6vw;
+    }
+    .bottom-mono {
+        font-size: 3vw;
+        font-weight: bold;
+        font-style: italic;
+        padding: 3vw;
+        margin: 0 auto;
+        width: 70vw;
+        height: 20vw;
+        text-align: center;
+    }
+}

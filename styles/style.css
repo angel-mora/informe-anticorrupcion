@@ -27,6 +27,7 @@ html {
           box-sizing: inherit;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .champ {
@@ -416,5 +417,140 @@ html {
   margin-top: -2vw;
   margin-bottom: 4vw;
   font-style: italic;
+}
+
+.royal-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.royal-box .yellow-box {
+  width: 50vw;
+  padding-top: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10vw;
+  font-weight: lighter;
+  margin: 3vw auto;
+}
+
+.royal-box .mono {
+  margin: 0 auto;
+  font-size: 3vw;
+  font-style: italic;
+  padding: 2vw;
+  text-align: center;
+}
+
+.royal-box .mono:nth-child(5) {
+  margin: 0;
+  text-align: left;
+  position: relative;
+  left: 15vw;
+  bottom: -6vw;
+}
+
+.royal-box .champ {
+  margin: 0 auto;
+  font-size: 12vw;
+  font-weight: lighter;
+}
+
+.royal-box #impunidad {
+  font-size: 23vw;
+}
+
+.background-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background-yellow .champ {
+  padding: 3vw;
+  margin: 0 auto;
+  font-size: 10vw;
+  font-weight: lighter;
+}
+
+.background-yellow .mono-pink {
+  margin: 0 auto;
+  font-size: 10vw;
+  font-weight: bold;
+}
+
+.background-yellow .sub {
+  font-size: 3vw;
+  font-style: italic;
+  margin-bottom: -3.5vw;
+}
+
+.background-yellow .one {
+  margin-left: 16.5vw;
+}
+
+.background-yellow .two {
+  margin-left: 22vw;
+  margin-top: 4vw;
+}
+
+.background-yellow .three {
+  text-align: right;
+  margin-right: 22vw;
+  margin-top: -2.7vw;
+  margin-bottom: 6vw;
+  font-size: 2.7vw;
+}
+
+.background-yellow .four {
+  margin-left: 10vw;
+}
+
+.background-yellow .five {
+  text-align: right;
+  margin-right: 9vw;
+  margin-top: -3vw;
+  margin-bottom: 6vw;
+}
+
+.background-yellow .six {
+  text-align: right;
+  margin-right: 12vw;
+  margin-top: -3vw;
+  margin-bottom: 6vw;
+}
+
+.background-yellow .seven {
+  text-align: right;
+  margin-right: 10vw;
+  margin-top: -3vw;
+  margin-bottom: 6vw;
+}
+
+.background-yellow .bottom-mono {
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+  padding: 3vw;
+  margin: 0 auto;
+  width: 70vw;
+  height: 20vw;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
