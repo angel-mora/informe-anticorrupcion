@@ -256,6 +256,9 @@ html {
         align-items: flex-end;
         width: 90vw;
         margin-top: -8vw;
+        h2 {
+            font-weight: lighter;
+        }
         .mono {
             font-size: 2.7vw;
             align-self: flex-end;
@@ -263,7 +266,7 @@ html {
             margin-bottom: -3vw;
         }
         .royal-box {
-            width: 55vw;
+            width: 48vw;
             height: 25vw;
         }
         .person,
@@ -352,7 +355,40 @@ html {
     }
 }
 
-.section4 {}
+.section4 {
+    display: flex;
+    flex-direction: column;
+    .section-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        flex: 1;
+        font-weight: lighter;
+        padding-top: 10vw;
+        padding-right: 14vw;
+        font-size: 10vw;
+        h2 {
+            font-weight: lighter;
+        }
+    }
+    .wrapped-title {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        justify-content: flex-end;
+        margin-bottom: 1vw;
+        margin-right: 1vw;
+        font-size: 4vw;
+        text-align: right;
+        line-height: 1.2;
+    }
+    .yellow-box {}
+}
 
 .section5 {}
 
@@ -360,8 +396,7 @@ html {
 
 .section7 {}
 
-.section8 {}
-
+//section8 
 .royal-box {
     display: flex;
     flex-direction: column;
@@ -399,6 +434,7 @@ html {
     }
 }
 
+// section 9
 .background-yellow {
     display: flex;
     flex-direction: column;
