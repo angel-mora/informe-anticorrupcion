@@ -427,11 +427,67 @@ html {
     }
 }
 
-.section5 {}
+.section5 {
+    padding: 3vw;
+    padding-left: 20vw;
+    font-size: 2.5vw;
+    font-style: italic;
+    .royal {
+        color: $royal;
+        font-weight: bold;
+        text-decoration: line-through;
+    }
+    .yellow {
+        font-weight: bold;
+    }
+}
 
-.section6 {}
+.section6 {
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    .yellow-box {
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.5vw;
+        font-size: 8.5vw;
+        font-weight: lighter;
+    }
+    .mono {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .header {
+        margin-left: 24vw;
+        text-align: left;
+    }
+}
 
-.section7 {}
+.section7 {
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    .yellow-box {
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.5vw;
+        font-size: 8.5vw;
+        font-weight: lighter;
+    }
+    .mono {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .header-top {
+        margin-left: 24vw;
+        text-align: left;
+    }
+    .header-bottom {
+        text-align: right;
+        padding-right: 24vw;
+        padding-bottom: 4vw;
+    }
+}
 
 //section8 
 .royal-box {

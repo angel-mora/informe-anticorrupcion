@@ -567,6 +567,77 @@ html {
   text-align: right;
 }
 
+.section5 {
+  padding: 3vw;
+  padding-left: 20vw;
+  font-size: 2.5vw;
+  font-style: italic;
+}
+
+.section5 .royal {
+  color: #1a1b2f;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.section5 .yellow {
+  font-weight: bold;
+}
+
+.section6 {
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+}
+
+.section6 .yellow-box {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5vw;
+  font-size: 8.5vw;
+  font-weight: lighter;
+}
+
+.section6 .mono {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.section6 .header {
+  margin-left: 24vw;
+  text-align: left;
+}
+
+.section7 {
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+}
+
+.section7 .yellow-box {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5vw;
+  font-size: 8.5vw;
+  font-weight: lighter;
+}
+
+.section7 .mono {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.section7 .header-top {
+  margin-left: 24vw;
+  text-align: left;
+}
+
+.section7 .header-bottom {
+  text-align: right;
+  padding-right: 24vw;
+  padding-bottom: 4vw;
+}
+
 .royal-box {
   display: -webkit-box;
   display: -ms-flexbox;
