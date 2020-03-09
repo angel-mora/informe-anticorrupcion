@@ -86,14 +86,6 @@ html {
   background-color: #1a1b2f;
 }
 
-.yellow-ellipse {
-  width: 25vw;
-  height: 10vw;
-  background: #ffb33d;
-  border-radius: 25vw / 15vw;
-  z-index: -1;
-}
-
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,9 +609,13 @@ html {
   width: 50vw;
   margin: 0 auto;
   text-align: center;
-  padding: 1.5vw;
+  padding: 1vw;
   font-size: 8.5vw;
   font-weight: lighter;
+}
+
+.section7 #person {
+  font-size: 8.5vw;
 }
 
 .section7 .mono {
@@ -636,6 +632,85 @@ html {
   text-align: right;
   padding-right: 24vw;
   padding-bottom: 4vw;
+}
+
+.section7 .yellow-mono {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 2vw;
+}
+
+.section7 .person {
+  font-size: 5vw;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.section7 .yellow-ellipse {
+  width: 30vw;
+  height: 15vw;
+  background: #ffb33d;
+  border-radius: 50vw / 25vw;
+  z-index: -1;
+  margin: 5vw auto 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section7 .mono-pink {
+  padding: 4vw;
+  font-size: 4vw;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.section7 .anonimo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6vw;
+  padding: 4vw;
+}
+
+.section7 .anonimo span {
+  color: black;
+}
+
+.section7 .anonimo-text {
+  width: 55vw;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+}
+
+.section7 .yellow-center {
+  text-align: center;
+  width: 55vw;
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.section7 .denunciantes {
+  text-align: center;
+  font-size: 6vw;
+}
+
+.section7 .center-pink-mono p {
+  font-style: italic;
+  font-weight: bold;
+  width: 60vw;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .royal-box {

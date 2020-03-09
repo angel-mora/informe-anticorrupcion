@@ -95,14 +95,6 @@ html {
     background-color: $royal;
 }
 
-.yellow-ellipse {
-    width: 25vw;
-    height: 10vw;
-    background: $yellow;
-    border-radius: 25vw / 15vw;
-    z-index: -1;
-}
-
 .header-container {
     display: flex;
     flex-direction: column;
@@ -470,9 +462,12 @@ html {
         width: 50vw;
         margin: 0 auto;
         text-align: center;
-        padding: 1.5vw;
+        padding: 1vw;
         font-size: 8.5vw;
         font-weight: lighter;
+    }
+    #person {
+        font-size: 8.5vw;
     }
     .mono {
         font-size: 2.5vw;
@@ -486,6 +481,67 @@ html {
         text-align: right;
         padding-right: 24vw;
         padding-bottom: 4vw;
+    }
+    .yellow-mono {
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 2vw;
+    }
+    .person {
+        font-size: 5vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .yellow-ellipse {
+        width: 30vw;
+        height: 15vw;
+        background: $yellow;
+        border-radius: 50vw / 25vw;
+        z-index: -1;
+        margin: 5vw auto 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mono-pink {
+        padding: 4vw;
+        font-size: 4vw;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .anonimo {
+        display: flex;
+        justify-content: center;
+        font-size: 6vw;
+        padding: 4vw;
+        span {
+            color: black;
+        }
+    }
+    .anonimo-text {
+        width: 55vw;
+        text-align: left;
+        margin: 0 auto;
+        padding-bottom: 2vw;
+    }
+    .yellow-center {
+        text-align: center;
+        width: 55vw;
+        margin: 0 auto;
+        padding: 2vw;
+    }
+    .denunciantes {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .center-pink-mono {
+        p {
+            font-style: italic;
+            font-weight: bold;
+            width: 60vw;
+            text-align: center;
+            margin: 0 auto;
+        }
     }
 }
 
