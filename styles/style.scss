@@ -744,38 +744,70 @@ body {
         width: 34vw;
         z-index: 999;
     }
-    // .lines-1 {
-    //     display: block;
-    //     position: relative;
-    //     content: "";
-    //     border-top: 1vw solid $yellow;
-    //     transform: rotate(30deg);
-    //     width: 20vw;
-    //     z-index: 999;
-    // }
-    // .lines-1::before {
-    //     position: absolute;
-    //     content: "";
-    //     top: 1vw;
-    //     left: 20vw;
-    //     border-top: 1vw solid $yellow;
-    //     transform: rotate(-30deg);
-    //     width: 20vw;
-    //     z-index: 999;
-    //}
+    .yellow-30deg {
+        display: inline-block;
+        position: relative;
+        content: "";
+        border-top: 0.5vw solid $yellow;
+        transform: rotate(30deg);
+        width: 20vw;
+        z-index: 999;
+        top: 4vw;
+        justify-content: center;
+        margin-left: 50vw;
+    }
+    .yellow30deg {
+        display: flex;
+        position: relative;
+        content: "";
+        border-top: 0.5vw solid $yellow;
+        transform: rotate(-30deg);
+        width: 20vw;
+        z-index: 999;
+        top: 5vw;
+        justify-content: center;
+        left: 33vw;
+    }
+    .yellow-150deg {
+        display: inline-block;
+        position: relative;
+        content: "";
+        border-top: 0.5vw solid $yellow;
+        transform: rotate(-150deg);
+        width: 20vw;
+        z-index: 999;
+        top: 4vw;
+        justify-content: center;
+        left: 33vw;
+        margin-bottom: 4vw;
+    }
+    .yellow150deg {
+        display: flex;
+        position: relative;
+        content: "";
+        border-top: 0.5vw solid $yellow;
+        transform: rotate(150deg);
+        width: 20vw;
+        z-index: 999;
+        top: 5vw;
+        justify-content: center;
+        left: 50vw;
+    }
+    .yellow90deg {
+        display: flex;
+        position: relative;
+        content: "";
+        border-top: 0.5vw solid $yellow;
+        transform: rotate(90deg);
+        width: 6vw;
+        z-index: 999;
+        top: 3vw;
+        justify-content: center;
+        margin: 0 auto;
+    }
     .tipo-corrupcion {
         font-size: 6vw;
     }
-    // .lines::before {
-    //     position: absolute;
-    //     content: "";
-    //     top: 24vw;
-    //     left: 52vw;
-    //     border-top: 1vw solid $yellow;
-    //     transform: rotate(30deg);
-    //     width: 20vw;
-    //     z-index: 999;
-    //}
     .titles {
         display: flex;
         justify-content: space-evenly;
@@ -810,14 +842,23 @@ body {
         margin: 0 auto;
         font-size: 2vw;
         padding-top: 6vw;
+        span {
+            font-weight: bolder;
+        }
     }
     .sin-respuesta {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        border: 1px solid black;
+        margin: 4vw auto -2vw;
+        .person {
+            font-size: 6vw;
+            padding-right: 2vw;
+        }
+        .mono {
+            font-style: italic;
+        }
     }
     .center-mono {
         width: 55vw;
@@ -829,6 +870,10 @@ body {
         margin: 0 auto;
         padding-top: 3vw;
         font-size: 4vw;
+        padding-bottom: 3vw;
+    }
+    .section-bottom {
+        padding-top: 15vw;
     }
 }
 
@@ -867,6 +912,20 @@ body {
     }
     #impunidad {
         font-size: 23vw;
+    }
+    .corrupcion {
+        position: relative;
+    }
+    .corrupcion::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 7vw;
+        right: 10vw;
+        border-top: 1vw solid $yellow;
+        transform: rotate(10deg);
+        width: 39vw;
+        z-index: 999;
     }
 }
 

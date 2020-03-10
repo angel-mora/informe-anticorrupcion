@@ -971,6 +971,93 @@ body {
   z-index: 999;
 }
 
+.section8 .yellow-30deg {
+  display: inline-block;
+  position: relative;
+  content: "";
+  border-top: 0.5vw solid #ffb33d;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  width: 20vw;
+  z-index: 999;
+  top: 4vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50vw;
+}
+
+.section8 .yellow30deg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  content: "";
+  border-top: 0.5vw solid #ffb33d;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  width: 20vw;
+  z-index: 999;
+  top: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 33vw;
+}
+
+.section8 .yellow-150deg {
+  display: inline-block;
+  position: relative;
+  content: "";
+  border-top: 0.5vw solid #ffb33d;
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+  width: 20vw;
+  z-index: 999;
+  top: 4vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 33vw;
+  margin-bottom: 4vw;
+}
+
+.section8 .yellow150deg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  content: "";
+  border-top: 0.5vw solid #ffb33d;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  width: 20vw;
+  z-index: 999;
+  top: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50vw;
+}
+
+.section8 .yellow90deg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  content: "";
+  border-top: 0.5vw solid #ffb33d;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 6vw;
+  z-index: 999;
+  top: 3vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
 .section8 .tipo-corrupcion {
   font-size: 6vw;
 }
@@ -1024,6 +1111,10 @@ body {
   padding-top: 6vw;
 }
 
+.section8 .center-royal span {
+  font-weight: bolder;
+}
+
 .section8 .sin-respuesta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,8 +1129,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  border: 1px solid black;
+  margin: 4vw auto -2vw;
+}
+
+.section8 .sin-respuesta .person {
+  font-size: 6vw;
+  padding-right: 2vw;
+}
+
+.section8 .sin-respuesta .mono {
+  font-style: italic;
 }
 
 .section8 .center-mono {
@@ -1053,6 +1152,11 @@ body {
   margin: 0 auto;
   padding-top: 3vw;
   font-size: 4vw;
+  padding-bottom: 3vw;
+}
+
+.section8 .section-bottom {
+  padding-top: 15vw;
 }
 
 .royal-box {
@@ -1106,6 +1210,23 @@ body {
 
 .royal-box #impunidad {
   font-size: 23vw;
+}
+
+.royal-box .corrupcion {
+  position: relative;
+}
+
+.royal-box .corrupcion::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 7vw;
+  right: 10vw;
+  border-top: 1vw solid #ffb33d;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 39vw;
+  z-index: 999;
 }
 
 .background-yellow {
