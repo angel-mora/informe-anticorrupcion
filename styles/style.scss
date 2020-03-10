@@ -141,12 +141,26 @@ html {
         flex-basis: 100%;
         flex: 1;
         padding: 0;
+        margin-top: -2vw;
+        margin-left: 1vw;
         justify-content: center;
     }
     .flex-corruption {
         font-size: 9vw;
-        margin-top: -4.5vw;
+        margin-top: -6vw;
     }
+    // .flex-corruption::before {
+    //     position: relative;
+    //     content: "";
+    //     left: 0;
+    //     top: 65%;
+    //     right: 90%;
+    //     border-top: 1px solid $yellow;
+    //     border-color: 1px solid $yellow;
+    //     transform: rotate(5deg);
+    //     width: 20vw;
+    //     z-index: 4;
+    // }
 }
 
 .section1 {
@@ -301,25 +315,31 @@ html {
             text-align: center;
             z-index: 2;
         }
-        .royal-star {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid $royal;
-            position: relative;
+        #star {
+            width: 65vw;
+            height: auto;
+            margin: -16vw auto -3vw;
         }
-        .royal-star:after {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-top: 100px solid $royal;
-            position: absolute;
-            content: "";
-            top: 30px;
-            left: -50px;
-        }
+        // FAILED ATTEMPT TO DO THE STAR WITH CSS
+        // .royal-star {
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 50px solid transparent;
+        //     border-right: 50px solid transparent;
+        //     border-bottom: 100px solid $royal;
+        //     position: relative;
+        // }
+        // .royal-star:after {
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 50px solid transparent;
+        //     border-right: 50px solid transparent;
+        //     border-top: 100px solid $royal;
+        //     position: absolute;
+        //     content: "";
+        //     top: 30px;
+        //     left: -50px;
+        // }
     }
     .mono {
         text-align: right;
@@ -437,6 +457,7 @@ html {
 .section6 {
     padding-top: 3vw;
     padding-bottom: 4vw;
+    text-align: center;
     .yellow-box {
         width: 50vw;
         margin: 0 auto;
@@ -445,6 +466,12 @@ html {
         font-size: 8.5vw;
         font-weight: lighter;
     }
+    #triforce {
+        width: 35vw;
+        margin: 0 auto;
+        padding-top: 1vw;
+        padding-bottom: 4vw;
+    }
     .mono {
         font-size: 2.5vw;
         text-align: center;
@@ -452,6 +479,16 @@ html {
     .header {
         margin-left: 24vw;
         text-align: left;
+    }
+    .pink-person {
+        font-size: 4vw;
+        font-weight: lighter;
+        padding-top: 2vw;
+    }
+    span {
+        font-family: $champ;
+        font-size: 6vw;
+        color: $yellow;
     }
 }
 
@@ -465,6 +502,38 @@ html {
         padding: 1vw;
         font-size: 8.5vw;
         font-weight: lighter;
+    }
+    .royal-yellow-box {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        margin: 0 auto;
+        font-size: 7vw;
+        h4 {
+            font-weight: lighter;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+        span {
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            padding: 0 2vw;
+        }
+        .royal-box:nth-child(2) {
+            padding-bottom: 4vw;
+        }
+        .yellow-box {
+            width: 30vw;
+            font-size: 3.5vw;
+            font-size: bolder;
+            z-index: 1;
+            position: relative;
+            top: -4vw;
+            transform: rotate(-2deg);
+        }
     }
     #person {
         font-size: 8.5vw;
@@ -517,6 +586,9 @@ html {
         span {
             color: black;
         }
+        img {
+            width: 10vw;
+        }
     }
     .anonimo-text {
         width: 55vw;
@@ -529,23 +601,146 @@ html {
         width: 55vw;
         margin: 0 auto;
         padding: 2vw;
+        font-style: italic;
+        span {
+            font-weight: lighter;
+            color: $pink;
+            font-weight: bold;
+        }
     }
     .denunciantes {
         text-align: center;
         font-size: 6vw;
     }
     .center-pink-mono {
-        p {
+        .mono {
             font-style: italic;
             font-weight: bold;
             width: 60vw;
             text-align: center;
             margin: 0 auto;
         }
+        .champ {
+            text-align: center;
+            font-size: 6vw;
+        }
+        .trabajo-mayoria {
+            width: 80vw;
+            margin: 0 auto;
+            padding: 3vw;
+        }
+        .transparencia {
+            width: 45vw;
+            height: 20vw;
+            margin-bottom: 6vw;
+        }
+        .contraloria {
+            font-weight: lighter;
+            padding-top: 3vw;
+        }
+    }
+    .pink-border-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 17vw;
+            height: 10vw;
+            border: 0.5vw solid $pink;
+            font-size: 1.5vw;
+            border-radius: 2vw;
+            padding: 1vw;
+            margin: 1vw;
+        }
     }
 }
 
-//section8 
+//section8
+.section8 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .yellow-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 75vw;
+        height: 12vw;
+        padding-top: 1vw;
+        font-size: 10vw;
+        position: relative;
+        top: 3vw;
+        font-weight: lighter;
+    }
+    .yellow {
+        font-weight: lighter;
+    }
+    .mono {
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    .header-bottom {
+        display: flex;
+        margin-top: 5vw;
+        justify-content: center;
+        text-align: center;
+    }
+    .corrupcion {
+        font-size: 10vw;
+    }
+    .tipo-corrupcion {
+        font-size: 6vw;
+    }
+    .titles {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10vw;
+    }
+    .subtitles {
+        display: flex;
+        justify-content: space-around;
+    }
+    .subtitles-2 {
+        margin: 2vw auto;
+    }
+    .white-sides-border {
+        border-left: 0.4vw solid $white;
+        border-right: 0.4vw solid $white;
+        border-radius: 2vw;
+    }
+    .white-mono {
+        font-size: 1vw;
+        width: 15vw;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .royal-mono {
+        font-size: 1vw;
+        width: 20vw;
+        font-weight: lighter;
+        text-align: left;
+    }
+    .center-royal {
+        width: 55vw;
+        margin: 0 auto;
+        font-size: 2vw;
+        padding-top: 6vw;
+    }
+    .center-mono {
+        width: 55vw;
+        font-size: 2vw;
+        margin: 4vw auto;
+    }
+}
+
+//section9
 .royal-box {
     display: flex;
     flex-direction: column;
@@ -583,7 +778,6 @@ html {
     }
 }
 
-// section 9
 .background-yellow {
     display: flex;
     flex-direction: column;
