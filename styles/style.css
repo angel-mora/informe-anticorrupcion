@@ -21,6 +21,12 @@ html {
   overflow-x: hidden;
 }
 
+header,
+section,
+body {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -155,7 +161,7 @@ html {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0;
+  padding-bottom: 2vw;
   margin-top: -2vw;
   margin-left: 1vw;
   -webkit-box-pack: center;
@@ -165,7 +171,21 @@ html {
 
 .header-container .flex-corruption {
   font-size: 9vw;
-  margin-top: -6vw;
+  margin-top: -4vw;
+  position: relative;
+}
+
+.header-container .flex-corruption::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5vw;
+  right: 10vw;
+  border-top: 1vw solid #ffb33d;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 29vw;
+  z-index: 999;
 }
 
 .section1 {
@@ -444,6 +464,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .section4 .section-head {
@@ -519,10 +540,38 @@ html {
   font-size: 5vw;
 }
 
+.section4 .flex-corruption {
+  position: relative;
+}
+
+.section4 .flex-corruption::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8vw;
+  right: 10vw;
+  border-top: 1.5vw solid #ffb33d;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 52vw;
+  z-index: 999;
+}
+
+.section4 .one,
+.section4 .two,
+.section4 .three,
+.section4 .four {
+  width: 6.5vw;
+  position: relative;
+  top: 15vw;
+  left: 10vw;
+}
+
 .section4 .pink {
   margin-left: 17vw;
   font-size: 13vw;
   font-weight: lighter;
+  padding: 2vw;
 }
 
 .section4 .left {
@@ -757,6 +806,7 @@ html {
   text-align: left;
   margin: 0 auto;
   padding-bottom: 2vw;
+  font-style: italic;
 }
 
 .section7 .yellow-center {
@@ -843,6 +893,14 @@ html {
   margin: 1vw;
 }
 
+.section7 .triste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10vw;
+  margin: 0 auto;
+}
+
 .section8 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,6 +955,20 @@ html {
 
 .section8 .corrupcion {
   font-size: 10vw;
+  position: relative;
+  padding-top: 4vw;
+}
+
+.section8 .corrupcion::before {
+  position: absolute;
+  content: "";
+  top: 9vw;
+  left: 33vw;
+  border-top: 1vw solid #ffb33d;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 34vw;
+  z-index: 999;
 }
 
 .section8 .tipo-corrupcion {
@@ -932,15 +1004,15 @@ html {
 }
 
 .section8 .white-mono {
-  font-size: 1vw;
-  width: 15vw;
+  font-size: 1.7vw;
+  width: 30vw;
   font-weight: lighter;
   text-align: center;
 }
 
 .section8 .royal-mono {
-  font-size: 1vw;
-  width: 20vw;
+  font-size: 1.7vw;
+  width: 30vw;
   font-weight: lighter;
   text-align: left;
 }
@@ -952,10 +1024,35 @@ html {
   padding-top: 6vw;
 }
 
+.section8 .sin-respuesta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
 .section8 .center-mono {
   width: 55vw;
   font-size: 2vw;
   margin: 4vw auto;
+}
+
+.section8 .comite {
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 3vw;
+  font-size: 4vw;
 }
 
 .royal-box {

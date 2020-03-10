@@ -31,6 +31,12 @@ html {
     overflow-x: hidden;
 }
 
+header,
+section,
+body {
+    overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -140,27 +146,27 @@ html {
         flex-direction: column;
         flex-basis: 100%;
         flex: 1;
-        padding: 0;
+        padding-bottom: 2vw;
         margin-top: -2vw;
         margin-left: 1vw;
         justify-content: center;
     }
     .flex-corruption {
         font-size: 9vw;
-        margin-top: -6vw;
+        margin-top: -4vw;
+        position: relative;
     }
-    // .flex-corruption::before {
-    //     position: relative;
-    //     content: "";
-    //     left: 0;
-    //     top: 65%;
-    //     right: 90%;
-    //     border-top: 1px solid $yellow;
-    //     border-color: 1px solid $yellow;
-    //     transform: rotate(5deg);
-    //     width: 20vw;
-    //     z-index: 4;
-    // }
+    .flex-corruption::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 5vw;
+        right: 10vw;
+        border-top: 1vw solid $yellow;
+        transform: rotate(10deg);
+        width: 29vw;
+        z-index: 999;
+    }
 }
 
 .section1 {
@@ -414,10 +420,35 @@ html {
         font-weight: bolder;
         font-size: 5vw;
     }
+    position: relative;
+    .flex-corruption {
+        position: relative;
+    }
+    .flex-corruption::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 8vw;
+        right: 10vw;
+        border-top: 1.5vw solid $yellow;
+        transform: rotate(10deg);
+        width: 52vw;
+        z-index: 999;
+    }
+    .one,
+    .two,
+    .three,
+    .four {
+        width: 6.5vw;
+        position: relative;
+        top: 15vw;
+        left: 10vw;
+    }
     .pink {
         margin-left: 17vw;
         font-size: 13vw;
         font-weight: lighter;
+        padding: 2vw;
     }
     .left {
         margin-left: 17vw;
@@ -595,6 +626,7 @@ html {
         text-align: left;
         margin: 0 auto;
         padding-bottom: 2vw;
+        font-style: italic;
     }
     .yellow-center {
         text-align: center;
@@ -658,6 +690,11 @@ html {
             margin: 1vw;
         }
     }
+    .triste {
+        display: flex;
+        width: 10vw;
+        margin: 0 auto;
+    }
 }
 
 //section8
@@ -694,10 +731,51 @@ html {
     }
     .corrupcion {
         font-size: 10vw;
+        position: relative;
+        padding-top: 4vw;
     }
+    .corrupcion::before {
+        position: absolute;
+        content: "";
+        top: 9vw;
+        left: 33vw;
+        border-top: 1vw solid $yellow;
+        transform: rotate(10deg);
+        width: 34vw;
+        z-index: 999;
+    }
+    // .lines-1 {
+    //     display: block;
+    //     position: relative;
+    //     content: "";
+    //     border-top: 1vw solid $yellow;
+    //     transform: rotate(30deg);
+    //     width: 20vw;
+    //     z-index: 999;
+    // }
+    // .lines-1::before {
+    //     position: absolute;
+    //     content: "";
+    //     top: 1vw;
+    //     left: 20vw;
+    //     border-top: 1vw solid $yellow;
+    //     transform: rotate(-30deg);
+    //     width: 20vw;
+    //     z-index: 999;
+    //}
     .tipo-corrupcion {
         font-size: 6vw;
     }
+    // .lines::before {
+    //     position: absolute;
+    //     content: "";
+    //     top: 24vw;
+    //     left: 52vw;
+    //     border-top: 1vw solid $yellow;
+    //     transform: rotate(30deg);
+    //     width: 20vw;
+    //     z-index: 999;
+    //}
     .titles {
         display: flex;
         justify-content: space-evenly;
@@ -716,14 +794,14 @@ html {
         border-radius: 2vw;
     }
     .white-mono {
-        font-size: 1vw;
-        width: 15vw;
+        font-size: 1.7vw;
+        width: 30vw;
         font-weight: lighter;
         text-align: center;
     }
     .royal-mono {
-        font-size: 1vw;
-        width: 20vw;
+        font-size: 1.7vw;
+        width: 30vw;
         font-weight: lighter;
         text-align: left;
     }
@@ -733,10 +811,24 @@ html {
         font-size: 2vw;
         padding-top: 6vw;
     }
+    .sin-respuesta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
     .center-mono {
         width: 55vw;
         font-size: 2vw;
         margin: 4vw auto;
+    }
+    .comite {
+        width: 70vw;
+        margin: 0 auto;
+        padding-top: 3vw;
+        font-size: 4vw;
     }
 }
 
