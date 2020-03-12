@@ -1,8 +1,15 @@
 @import url(//db.onlinewebfonts.com/c/e33b1a09897268653accb3debb07e7ac?family=Champion);
+@import url(//db.onlinewebfonts.com/c/b30e361a621ce3090b02c8b3238deb2c?family=Champion);
 @font-face {
   font-family: "Champion";
   src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot");
   src: url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e33b1a09897268653accb3debb07e7ac.svg#Champion") format("svg");
+}
+
+@font-face {
+  font-family: "Heavy_Champion";
+  src: url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.eot");
+  src: url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.woff") format("woff"), url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b30e361a621ce3090b02c8b3238deb2c.svg#Champion") format("svg");
 }
 
 @font-face {
@@ -40,12 +47,16 @@ body {
   font-family: "Champion", sans-serif;
 }
 
+.heavychamp {
+  font-family: "Heavy_Champion", sans-serif;
+}
+
 .person {
   font-family: "faction_personalblack", sans-serif;
 }
 
 .mono {
-  font-family: "Space Mono", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .white {
@@ -111,25 +122,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
-  left: 15vw;
+  margin: 0 auto;
 }
 
 .header-container .parallelogram {
-  -webkit-transform: skew(20deg);
-  transform: skew(-20deg);
+  -webkit-transform: skew(-6deg);
+          transform: skew(-6deg);
   width: 22vw;
-  height: 10vw;
+  height: 11vw;
 }
 
 .header-container .parallelogram p {
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  position: absolute;
-  top: 0.8vw;
-  right: 1.8vw;
+  -webkit-transform: skew(6deg);
+          transform: skew(6deg);
   text-align: right;
-  padding: 0 2vw;
+  padding: 0 1vw;
+  font-size: 3.5vw;
 }
 
 .header-container .header-text {
@@ -144,7 +152,6 @@ body {
 .header-container .header-mono-font-style {
   font-size: 3vw;
   font-weight: bold;
-  font-style: italic;
 }
 
 .header-container .flex-anti {
@@ -156,14 +163,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-bottom: 2vw;
-  margin-top: -2vw;
-  margin-left: 1vw;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -171,7 +173,6 @@ body {
 
 .header-container .flex-corruption {
   font-size: 9vw;
-  margin-top: -4vw;
   position: relative;
 }
 
@@ -212,15 +213,16 @@ body {
 .section1 .section1-champ-style {
   font-size: 20vw;
   margin-top: -3vw;
+  font-weight: lighter;
 }
 
 .section1 .section1-transformed-box {
   width: 20vw;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  font-weight: bold;
   font-style: italic;
   font-size: 6vw;
+  font-weight: bold;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -270,12 +272,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60vw;
-  margin-top: 3vw;
+  width: 90vw;
+  margin: 3vw auto;
 }
 
 .section2 .section2-1stbox .mono {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
@@ -298,7 +300,7 @@ body {
   top: -3vw;
 }
 
-.section2 .section2-1stbox .person,
+.section2 .section2-1stbox .heavychamp,
 .section2 .section2-1stbox .champ {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,15 +311,8 @@ body {
   font-weight: lighter;
 }
 
-.section2 .section2-1stbox .person {
+.section2 .section2-1stbox .heavychamp {
   font-size: 8vw;
-}
-
-.section2 .section2-1stbox .person:first-child {
-  margin-left: 2vw;
-  margin-top: 2vw;
-  margin-bottom: -2vw;
-  margin-right: 8vw;
 }
 
 .section2 .section2-1stbox .champ {
@@ -339,7 +334,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 90vw;
-  margin-top: -8vw;
+  margin: -8vw auto;
 }
 
 .section2 .section2-2ndbox h2 {
@@ -359,7 +354,7 @@ body {
   height: 25vw;
 }
 
-.section2 .section2-2ndbox .person,
+.section2 .section2-2ndbox .heavychamp,
 .section2 .section2-2ndbox .champ {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,7 +369,7 @@ body {
   margin-bottom: 1vw;
 }
 
-.section2 .section2-2ndbox .person {
+.section2 .section2-2ndbox .heavychamp {
   font-size: 8vw;
   margin-left: 4vw;
   margin-top: 3vw;
@@ -441,16 +436,29 @@ body {
           flex-direction: column;
 }
 
-.section3 .champ {
+.section3 .background-white .champ {
   text-align: center;
-  font-size: 12vw;
+  font-size: 14vw;
+  font-weight: lighter;
+  padding: 3vw;
+}
+
+.section3 .background-yellow {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  padding-top: 2vw;
+}
+
+.section3 .background-yellow .champ {
+  text-align: center;
+  font-size: 14vw;
   font-weight: lighter;
   padding: 3vw;
 }
 
 .section3 .mono {
   text-align: center;
-  font-size: 2.7vw;
+  font-size: 3.5vw;
   margin-top: -2vw;
   margin-bottom: 4vw;
   font-style: italic;
@@ -526,9 +534,9 @@ body {
 .section4 .pasos {
   width: 22vw;
   margin-top: 3vw;
-  padding: 1vw 2vw;
-  margin-left: 60vw;
-  margin-top: -5vw;
+  padding: 0.5vw 2vw;
+  margin-left: 63vw;
+  margin-top: -4vw;
   font-size: 3vw;
   font-weight: bolder;
   color: #1a1b2f;
@@ -536,7 +544,7 @@ body {
 
 .section4 .cuatro {
   padding: 0 0.5vw;
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 5vw;
 }
 
@@ -553,7 +561,7 @@ body {
   border-top: 1.5vw solid #ffb33d;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  width: 52vw;
+  width: 50vw;
   z-index: 999;
 }
 
@@ -575,15 +583,15 @@ body {
 }
 
 .section4 .left {
-  margin-left: 17vw;
-  font-size: 3vw;
-  margin-bottom: -2vw;
+  margin-left: 19vw;
+  font-size: 3.5vw;
+  margin-bottom: -3vw;
 }
 
 .section4 .right {
-  margin-right: 17vw;
+  margin-right: 23vw;
   margin-top: -4vw;
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: right;
 }
 
@@ -591,14 +599,17 @@ body {
   margin-top: -4vw;
   margin-right: 15vw;
   margin-bottom: 4vw;
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-align: right;
 }
 
+.section4 .corruption-through {
+  text-decoration: line-through;
+}
+
 .section5 {
-  padding: 3vw;
-  padding-left: 20vw;
-  font-size: 2.5vw;
+  padding: 3vw 4vw 3vw 10vw;
+  font-size: 3.5vw;
   font-style: italic;
 }
 
@@ -619,33 +630,33 @@ body {
 }
 
 .section6 .yellow-box {
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto;
   text-align: center;
-  padding: 1.5vw;
-  font-size: 8.5vw;
+  padding-top: 1.5vw;
+  font-size: 10.5vw;
   font-weight: lighter;
 }
 
 .section6 #triforce {
-  width: 35vw;
+  width: 60vw;
   margin: 0 auto;
-  padding-top: 1vw;
+  padding-top: 3vw;
   padding-bottom: 4vw;
 }
 
 .section6 .mono {
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   text-align: center;
 }
 
 .section6 .header {
-  margin-left: 24vw;
+  margin-left: 20vw;
   text-align: left;
 }
 
-.section6 .pink-person {
-  font-size: 4vw;
+.section6 .pink-heavychamp {
+  font-size: 3.7vw;
   font-weight: lighter;
   padding-top: 2vw;
 }
@@ -662,11 +673,11 @@ body {
 }
 
 .section7 .yellow-box {
-  width: 50vw;
+  width: 65vw;
   margin: 0 auto;
   text-align: center;
   padding: 1vw;
-  font-size: 8.5vw;
+  font-size: 10.5vw;
   font-weight: lighter;
 }
 
@@ -678,9 +689,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40vw;
+  width: 60vw;
   margin: 0 auto;
-  font-size: 7vw;
+  font-size: 9vw;
 }
 
 .section7 .royal-yellow-box h4 {
@@ -698,7 +709,7 @@ body {
           justify-content: center;
 }
 
-.section7 .royal-yellow-box span {
+.section7 .royal-yellow-box .heavychamp {
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +719,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0 2vw;
+  font-size: 10vw;
+  margin-bottom: -3vw;
 }
 
 .section7 .royal-yellow-box .royal-box:nth-child(2) {
@@ -715,8 +728,8 @@ body {
 }
 
 .section7 .royal-yellow-box .yellow-box {
-  width: 30vw;
-  font-size: 3.5vw;
+  width: 45vw;
+  font-size: 5.5vw;
   font-size: bolder;
   z-index: 1;
   position: relative;
@@ -726,22 +739,24 @@ body {
 }
 
 .section7 #person {
-  font-size: 8.5vw;
+  font-size: 12vw;
+  font-weight: lighter;
+  padding-top: 2.5vw;
 }
 
 .section7 .mono {
-  font-size: 2.5vw;
+  font-size: 3.7vw;
   text-align: center;
 }
 
 .section7 .header-top {
-  margin-left: 24vw;
+  margin-left: 17vw;
   text-align: left;
 }
 
 .section7 .header-bottom {
   text-align: right;
-  padding-right: 24vw;
+  padding-right: 17vw;
   padding-bottom: 4vw;
 }
 
@@ -751,17 +766,17 @@ body {
   margin-bottom: 2vw;
 }
 
-.section7 .person {
+.section7 .heavychamp {
   font-size: 5vw;
   font-weight: lighter;
   text-align: center;
 }
 
 .section7 .yellow-ellipse {
-  width: 30vw;
-  height: 15vw;
+  width: 42vw;
+  height: 9vw;
   background: #ffb33d;
-  border-radius: 50vw / 25vw;
+  border-radius: 65vw / 15vw;
   z-index: -1;
   margin: 5vw auto 1vw;
   display: -webkit-box;
@@ -777,7 +792,7 @@ body {
 
 .section7 .mono-pink {
   padding: 4vw;
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: bold;
   font-style: italic;
 }
@@ -789,7 +804,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 6vw;
+  font-size: 12vw;
   padding: 4vw;
 }
 
@@ -801,6 +816,25 @@ body {
   width: 10vw;
 }
 
+.section7 .anonimo .pink-strike {
+  position: relative;
+  color: #ffb33d;
+  margin-right: 3vw;
+}
+
+.section7 .anonimo .pink-strike::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8vw;
+  right: 10vw;
+  border-top: 1.5vw solid #ed4462;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 30vw;
+  z-index: 999;
+}
+
 .section7 .anonimo-text {
   width: 55vw;
   text-align: left;
@@ -809,16 +843,20 @@ body {
   font-style: italic;
 }
 
+.section7 .anonimo-text .pink {
+  font-weight: bold;
+}
+
 .section7 .yellow-center {
   text-align: center;
   width: 55vw;
   margin: 0 auto;
   padding: 2vw;
   font-style: italic;
+  font-weight: bold;
 }
 
 .section7 .yellow-center span {
-  font-weight: lighter;
   color: #ed4462;
   font-weight: bold;
 }
@@ -831,7 +869,7 @@ body {
 .section7 .center-pink-mono .mono {
   font-style: italic;
   font-weight: bold;
-  width: 60vw;
+  width: 80vw;
   text-align: center;
   margin: 0 auto;
 }
@@ -848,49 +886,54 @@ body {
 }
 
 .section7 .center-pink-mono .transparencia {
-  width: 45vw;
-  height: 20vw;
+  width: 65vw;
+  height: 10vw;
+  border-radius: 65vw / 10vw;
   margin-bottom: 6vw;
 }
 
 .section7 .center-pink-mono .contraloria {
   font-weight: lighter;
   padding-top: 3vw;
+  font-size: 10vw;
 }
 
 .section7 .pink-border-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section7 .pink-border-box li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 17vw;
-  height: 10vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40vw;
+  height: 22vw;
   border: 0.5vw solid #ed4462;
-  font-size: 1.5vw;
+  font-size: 4.5vw;
   border-radius: 2vw;
-  padding: 1vw;
-  margin: 1vw;
+  padding: 0.5vw;
+  margin: 3vw;
 }
 
 .section7 .triste {
@@ -937,8 +980,12 @@ body {
   font-weight: lighter;
 }
 
+.section8 .penal {
+  margin-top: -10vw;
+}
+
 .section8 .mono {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
@@ -1059,55 +1106,56 @@ body {
 }
 
 .section8 .tipo-corrupcion {
-  font-size: 6vw;
-}
-
-.section8 .titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 10vw;
+  font-size: 14vw;
+  text-align: left;
+  margin-left: 23vw;
 }
 
 .section8 .subtitles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.section8 .subtitles-2 {
-  margin: 2vw auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section8 .white-sides-border {
-  border-left: 0.4vw solid #fff;
-  border-right: 0.4vw solid #fff;
+  border: 0.4vw solid #fff;
   border-radius: 2vw;
 }
 
 .section8 .white-mono {
-  font-size: 1.7vw;
-  width: 30vw;
+  font-size: 3.5vw;
+  width: 80vw;
   font-weight: lighter;
   text-align: center;
+  margin: 0 auto;
 }
 
 .section8 .royal-mono {
-  font-size: 1.7vw;
-  width: 30vw;
+  font-size: 3.5vw;
+  width: 90vw;
   font-weight: lighter;
   text-align: left;
+  margin: 4vw;
+}
+
+.section8 .one,
+.section8 .two {
+  width: 11vw;
+  position: relative;
+  top: 15vw;
+  left: -35vw;
 }
 
 .section8 .center-royal {
-  width: 55vw;
+  width: 60vw;
   margin: 0 auto;
-  font-size: 2vw;
+  font-size: 3.5vw;
   padding-top: 6vw;
 }
 
@@ -1132,13 +1180,14 @@ body {
   margin: 4vw auto -2vw;
 }
 
-.section8 .sin-respuesta .person {
-  font-size: 6vw;
+.section8 .sin-respuesta .heavychamp {
+  font-size: 10vw;
   padding-right: 2vw;
 }
 
 .section8 .sin-respuesta .mono {
   font-style: italic;
+  font-size: 6vw;
 }
 
 .section8 .center-mono {
@@ -1150,13 +1199,14 @@ body {
 .section8 .comite {
   width: 70vw;
   margin: 0 auto;
-  padding-top: 3vw;
-  font-size: 4vw;
+  padding-top: 5vw;
+  font-size: 6vw;
   padding-bottom: 3vw;
 }
 
 .section8 .section-bottom {
-  padding-top: 15vw;
+  padding-top: 1vw;
+  font-size: 3.5vw;
 }
 
 .royal-box {
@@ -1171,7 +1221,7 @@ body {
 
 .royal-box .yellow-box {
   width: 50vw;
-  padding-top: 3vw;
+  padding-top: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,7 +1238,7 @@ body {
 
 .royal-box .mono {
   margin: 0 auto;
-  font-size: 3vw;
+  font-size: 4vw;
   font-style: italic;
   padding: 2vw;
   text-align: center;
@@ -1253,7 +1303,7 @@ body {
 }
 
 .background-yellow .sub {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-style: italic;
   margin-bottom: -3.5vw;
 }
@@ -1272,7 +1322,7 @@ body {
   margin-right: 22vw;
   margin-top: -2.7vw;
   margin-bottom: 6vw;
-  font-size: 2.7vw;
+  font-size: 3vw;
 }
 
 .background-yellow .four {
@@ -1301,10 +1351,10 @@ body {
 }
 
 .background-yellow .bottom-mono {
-  font-size: 3vw;
+  font-size: 3.6vw;
   font-weight: bold;
   font-style: italic;
-  padding: 3vw;
+  padding-bottom: 3vw;
   margin: 0 auto;
   width: 70vw;
   height: 20vw;
