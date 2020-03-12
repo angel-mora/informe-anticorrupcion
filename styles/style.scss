@@ -127,16 +127,18 @@ body {
     }
     .parallelogram {
         transform: skew(-6deg);
-        width: 22vw;
+        width: 24vw;
         height: 11vw;
+        display: flex;
+        align-items: center;
         p {
             transform: skew(6deg);
             // position: absolute;
             // top: 0.8vw;
             // right: 1.8vw;
             text-align: right;
-            padding: 0 1vw;
-            font-size: 3.5vw;
+            padding-right: 1vw;
+            font-size: 4vw;
         }
     }
     .header-text {
@@ -151,19 +153,19 @@ body {
         font-weight: bold;
     }
     .flex-anti {
-        font-size: 14vw;
+        font-size: 15vw;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         // flex-basis: 100%;
         // flex: 1;
         // padding-bottom: 2vw;
-        // margin-top: -2vw;
-        justify-content: center;
+        margin-top: -2.5vw;
+        justify-content: flex-start;
     }
     .flex-corruption {
         font-size: 9vw;
-        // margin-top: -4vw;
+        margin-top: -6vw;
         position: relative;
     }
     .flex-corruption::before {
@@ -244,20 +246,20 @@ body {
             margin: -3vw;
         }
         .royal-box {
-            width: 45vw;
-            height: 20vw;
+            width: 50vw;
+            height: 30vw;
+            padding-top: 3vw;
         }
         .yellow-box {
             padding: 2vw 2vw;
             transform: rotate(-2deg);
             position: relative;
-            top: -3vw;
+            top: -7vw;
         }
         .heavychamp,
         .champ {
-            display: flex;
-            justify-content: center;
             font-weight: lighter;
+            text-align: center;
         }
         .heavychamp {
             font-size: 8vw;
@@ -276,21 +278,21 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         width: 90vw;
         margin: -8vw auto;
         h2 {
             font-weight: lighter;
         }
         .mono {
-            font-size: 2.7vw;
+            font-size: 3.5vw;
             align-self: flex-end;
             text-align: right;
             margin-bottom: -3vw;
         }
         .royal-box {
-            width: 48vw;
-            height: 25vw;
+            width: 60vw;
+            height: 28vw;
         }
         .heavychamp,
         .champ {
@@ -312,10 +314,13 @@ body {
         }
         #se {
             text-align: center;
-            font-size: 3vw;
+            font-size: 4vw;
             padding: 0;
             margin-top: -7vw;
             margin-bottom: -2vw;
+        }
+        .mono-white {
+            margin-right: 12vw;
         }
     }
     .section2-3rdstar {
@@ -323,9 +328,11 @@ body {
         flex-direction: column;
         justify-content: center;
         width: 100vw;
+        margin-top: 10vw;
+        margin-bottom: 1vw;
         .yellow-box {
-            width: 65vw;
-            font-size: 2.8vw;
+            width: 75vw;
+            font-size: 3vw;
             margin: 8vw auto;
             padding: 0;
             transform: rotate(-3deg);
@@ -341,8 +348,11 @@ body {
     .mono {
         text-align: right;
         padding: 3.5vw;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-style: italic;
+    }
+    .white-mono {
+        margin: 4vw auto 1vw;
     }
 }
 

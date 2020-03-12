@@ -128,16 +128,22 @@ body {
 .header-container .parallelogram {
   -webkit-transform: skew(-6deg);
           transform: skew(-6deg);
-  width: 22vw;
+  width: 24vw;
   height: 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-container .parallelogram p {
   -webkit-transform: skew(6deg);
           transform: skew(6deg);
   text-align: right;
-  padding: 0 1vw;
-  font-size: 3.5vw;
+  padding-right: 1vw;
+  font-size: 4vw;
 }
 
 .header-container .header-text {
@@ -155,7 +161,7 @@ body {
 }
 
 .header-container .flex-anti {
-  font-size: 14vw;
+  font-size: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,13 +172,15 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: -2.5vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header-container .flex-corruption {
   font-size: 9vw;
+  margin-top: -6vw;
   position: relative;
 }
 
@@ -288,8 +296,9 @@ body {
 }
 
 .section2 .section2-1stbox .royal-box {
-  width: 45vw;
-  height: 20vw;
+  width: 50vw;
+  height: 30vw;
+  padding-top: 3vw;
 }
 
 .section2 .section2-1stbox .yellow-box {
@@ -297,18 +306,13 @@ body {
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
   position: relative;
-  top: -3vw;
+  top: -7vw;
 }
 
 .section2 .section2-1stbox .heavychamp,
 .section2 .section2-1stbox .champ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: lighter;
+  text-align: center;
 }
 
 .section2 .section2-1stbox .heavychamp {
@@ -330,9 +334,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90vw;
   margin: -8vw auto;
 }
@@ -342,7 +346,7 @@ body {
 }
 
 .section2 .section2-2ndbox .mono {
-  font-size: 2.7vw;
+  font-size: 3.5vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: right;
@@ -350,8 +354,8 @@ body {
 }
 
 .section2 .section2-2ndbox .royal-box {
-  width: 48vw;
-  height: 25vw;
+  width: 60vw;
+  height: 28vw;
 }
 
 .section2 .section2-2ndbox .heavychamp,
@@ -382,10 +386,14 @@ body {
 
 .section2 .section2-2ndbox #se {
   text-align: center;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0;
   margin-top: -7vw;
   margin-bottom: -2vw;
+}
+
+.section2 .section2-2ndbox .mono-white {
+  margin-right: 12vw;
 }
 
 .section2 .section2-3rdstar {
@@ -400,11 +408,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
+  margin-top: 10vw;
+  margin-bottom: 1vw;
 }
 
 .section2 .section2-3rdstar .yellow-box {
-  width: 65vw;
-  font-size: 2.8vw;
+  width: 75vw;
+  font-size: 3vw;
   margin: 8vw auto;
   padding: 0;
   -webkit-transform: rotate(-3deg);
@@ -422,8 +432,12 @@ body {
 .section2 .mono {
   text-align: right;
   padding: 3.5vw;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   font-style: italic;
+}
+
+.section2 .white-mono {
+  margin: 4vw auto 1vw;
 }
 
 .section3 {
