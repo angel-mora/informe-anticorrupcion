@@ -187,6 +187,7 @@ body {
     button {
         font-family: $heavychamp;
         background-color: $pink;
+        font-size: 4vw;
         margin: 5vw auto;
         width: 50vw;
         height: 10vw;
@@ -1081,5 +1082,19 @@ body {
         width: 70vw;
         height: 20vw;
         text-align: center;
+    }
+    button {
+        font-family: $heavychamp;
+        background-color: $pink;
+        font-size: 4vw;
+        margin: 5vw auto;
+        width: 50vw;
+        height: 10vw;
+        border: none;
+        border-radius: 2vw;
+        a {
+            text-decoration: none;
+            color: $royal;
+        }
     }
 }

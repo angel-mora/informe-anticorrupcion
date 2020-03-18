@@ -137,6 +137,7 @@ body {
 .header-container button {
   font-family: "Heavy_Champion", sans-serif;
   background-color: #ed4462;
+  font-size: 4vw;
   margin: 5vw auto;
   width: 50vw;
   height: 10vw;
@@ -1350,5 +1351,21 @@ body {
   width: 70vw;
   height: 20vw;
   text-align: center;
+}
+
+.background-yellow button {
+  font-family: "Heavy_Champion", sans-serif;
+  background-color: #ed4462;
+  font-size: 4vw;
+  margin: 5vw auto;
+  width: 50vw;
+  height: 10vw;
+  border: none;
+  border-radius: 2vw;
+}
+
+.background-yellow button a {
+  text-decoration: none;
+  color: #1a1b2f;
 }
 /*# sourceMappingURL=style.css.map */
