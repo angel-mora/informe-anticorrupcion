@@ -114,87 +114,39 @@ body {
   padding: 5vw;
 }
 
-.header-container .three-styles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.header-container .header-logo {
+  width: 70vw;
   margin: 0 auto;
-}
-
-.header-container .parallelogram {
-  -webkit-transform: skew(-6deg);
-          transform: skew(-6deg);
-  width: 24vw;
-  height: 11vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-container .parallelogram p {
-  -webkit-transform: skew(6deg);
-          transform: skew(6deg);
-  text-align: right;
-  padding-right: 1vw;
-  font-size: 4vw;
+  padding-bottom: 5vw;
 }
 
 .header-container .header-text {
-  width: 60vw;
+  width: 80vw;
   margin: -2vw auto;
 }
 
 .header-container .header-text p {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .header-container .header-mono-font-style {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bold;
 }
 
-.header-container .flex-anti {
-  font-size: 15vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: -2.5vw;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.header-container button {
+  font-family: "Heavy_Champion", sans-serif;
+  background-color: #ed4462;
+  margin: 5vw auto;
+  width: 50vw;
+  height: 10vw;
+  border: none;
+  border-radius: 2vw;
 }
 
-.header-container .flex-corruption {
-  font-size: 9vw;
-  margin-top: -6vw;
-  position: relative;
-}
-
-.header-container .flex-corruption::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 5vw;
-  right: 10vw;
-  border-top: 1vw solid #ffb33d;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-  width: 29vw;
-  z-index: 999;
+.header-container button a {
+  text-decoration: none;
+  color: #1a1b2f;
 }
 
 .section1 {
@@ -212,7 +164,7 @@ body {
 }
 
 .section1 .section1-mono-font-style {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: bold;
   font-style: italic;
   padding-top: 2vw;
@@ -245,6 +197,13 @@ body {
   font-size: 18vw;
   margin-top: -8vw;
   text-align: center;
+}
+
+.section1 .section-1-person-style span {
+  font-size: 9vw;
+  position: relative;
+  top: -6.5vw;
+  left: -2vw;
 }
 
 .section2 .section2-mono {
@@ -285,7 +244,7 @@ body {
 }
 
 .section2 .section2-1stbox .mono {
-  font-size: 3.5vw;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -413,8 +372,8 @@ body {
 }
 
 .section2 .section2-3rdstar .yellow-box {
-  width: 75vw;
-  font-size: 3vw;
+  width: 85vw;
+  font-size: 3.5vw;
   margin: 8vw auto;
   padding: 0;
   -webkit-transform: rotate(-3deg);
@@ -941,7 +900,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40vw;
+  width: 60vw;
   height: 22vw;
   border: 0.5vw solid #ed4462;
   font-size: 4.5vw;
@@ -1015,7 +974,7 @@ body {
 }
 
 .section8 .corrupcion {
-  font-size: 10vw;
+  font-size: 20vw;
   position: relative;
   padding-top: 4vw;
 }
@@ -1023,13 +982,17 @@ body {
 .section8 .corrupcion::before {
   position: absolute;
   content: "";
-  top: 9vw;
-  left: 33vw;
+  top: 14vw;
+  left: 18vw;
   border-top: 1vw solid #ffb33d;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  width: 34vw;
+  width: 65vw;
   z-index: 999;
+}
+
+.section8 .admin {
+  margin-top: -10vw;
 }
 
 .section8 .yellow-30deg {
@@ -1140,6 +1103,20 @@ body {
 .section8 .white-sides-border {
   border: 0.4vw solid #fff;
   border-radius: 2vw;
+  height: 22vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section8 #white-sides-border {
+  width: 60vw;
 }
 
 .section8 .white-mono {
@@ -1151,11 +1128,11 @@ body {
 }
 
 .section8 .royal-mono {
-  font-size: 3.5vw;
-  width: 90vw;
+  font-size: 4vw;
+  width: 60vw;
   font-weight: lighter;
   text-align: left;
-  margin: 4vw;
+  margin: 3vw auto;
 }
 
 .section8 .one,
@@ -1167,9 +1144,9 @@ body {
 }
 
 .section8 .center-royal {
-  width: 60vw;
+  width: 75vw;
   margin: 0 auto;
-  font-size: 3.5vw;
+  font-size: 4vw;
   padding-top: 6vw;
 }
 

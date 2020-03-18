@@ -118,66 +118,84 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5vw;
-    .three-styles {
-        display: flex;
-        flex-direction: row;
+    // .three-styles {
+    //     display: flex;
+    //     flex-direction: row;
+    //     margin: 0 auto;
+    //     // position: relative;
+    //     // left: 15vw;
+    // }
+    .header-logo {
+        width: 70vw;
         margin: 0 auto;
-        // position: relative;
-        // left: 15vw;
+        padding-bottom: 5vw;
     }
-    .parallelogram {
-        transform: skew(-6deg);
-        width: 24vw;
-        height: 11vw;
-        display: flex;
-        align-items: center;
+    // .parallelogram {
+    //     transform: skew(-6deg);
+    //     width: 24vw;
+    //     height: 11vw;
+    //     display: flex;
+    //     align-items: center;
+    //     p {
+    //         transform: skew(6deg);
+    //         // position: absolute;
+    //         // top: 0.8vw;
+    //         // right: 1.8vw;
+    //         text-align: right;
+    //         padding-right: 1vw;
+    //         font-size: 4vw;
+    //     }
+    // }
+    .header-text {
+        width: 80vw;
+        margin: -2vw auto;
         p {
-            transform: skew(6deg);
-            // position: absolute;
-            // top: 0.8vw;
-            // right: 1.8vw;
-            text-align: right;
-            padding-right: 1vw;
             font-size: 4vw;
         }
     }
-    .header-text {
-        width: 60vw;
-        margin: -2vw auto;
-        p {
-            font-size: 3vw;
-        }
-    }
     .header-mono-font-style {
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: bold;
     }
-    .flex-anti {
-        font-size: 15vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // flex-basis: 100%;
-        // flex: 1;
-        // padding-bottom: 2vw;
-        margin-top: -2.5vw;
-        justify-content: flex-start;
-    }
-    .flex-corruption {
-        font-size: 9vw;
-        margin-top: -6vw;
-        position: relative;
-    }
-    .flex-corruption::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 5vw;
-        right: 10vw;
-        border-top: 1vw solid $yellow;
-        transform: rotate(10deg);
-        width: 29vw;
-        z-index: 999;
+    // .flex-anti {
+    //     font-size: 15vw;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     // flex-basis: 100%;
+    //     // flex: 1;
+    //     // padding-bottom: 2vw;
+    //     margin-top: -2.5vw;
+    //     justify-content: flex-start;
+    // }
+    // .flex-corruption {
+    //     font-size: 9vw;
+    //     margin-top: -6vw;
+    //     position: relative;
+    // }
+    // .flex-corruption::before {
+    //     position: absolute;
+    //     content: "";
+    //     left: 0;
+    //     top: 5vw;
+    //     right: 10vw;
+    //     border-top: 1vw solid $yellow;
+    //     transform: rotate(10deg);
+    //     width: 29vw;
+    //     z-index: 999;
+    // }
+    button {
+        font-family: $heavychamp;
+        background-color: $pink;
+        margin: 5vw auto;
+        width: 50vw;
+        height: 10vw;
+        border: none;
+        border-radius: 2vw;
+        a {
+            text-decoration: none;
+            color: $royal;
+        }
     }
 }
 
@@ -188,7 +206,7 @@ body {
         margin: 0 auto;
     }
     .section1-mono-font-style {
-        font-size: 3vw;
+        font-size: 3.5vw;
         font-weight: bold;
         font-style: italic;
         padding-top: 2vw;
@@ -215,6 +233,12 @@ body {
         font-size: 18vw;
         margin-top: -8vw;
         text-align: center;
+        span {
+            font-size: 9vw;
+            position: relative;
+            top: -6.5vw;
+            left: -2vw;
+        }
     }
 }
 
@@ -238,7 +262,7 @@ body {
         width: 90vw;
         margin: 3vw auto;
         .mono {
-            font-size: 3.5vw;
+            font-size: 4vw;
             font-weight: bold;
         }
         .chihuahua {
@@ -331,8 +355,8 @@ body {
         margin-top: 10vw;
         margin-bottom: 1vw;
         .yellow-box {
-            width: 75vw;
-            font-size: 3vw;
+            width: 85vw;
+            font-size: 3.5vw;
             margin: 8vw auto;
             padding: 0;
             transform: rotate(-3deg);
@@ -728,7 +752,7 @@ body {
             margin: 0 auto;
             align-items: center;
             justify-content: center;
-            width: 40vw;
+            width: 60vw;
             height: 22vw;
             border: 0.5vw solid $pink;
             font-size: 4.5vw;
@@ -780,19 +804,22 @@ body {
         text-align: center;
     }
     .corrupcion {
-        font-size: 10vw;
+        font-size: 20vw;
         position: relative;
         padding-top: 4vw;
     }
     .corrupcion::before {
         position: absolute;
         content: "";
-        top: 9vw;
-        left: 33vw;
+        top: 14vw;
+        left: 18vw;
         border-top: 1vw solid $yellow;
         transform: rotate(10deg);
-        width: 34vw;
+        width: 65vw;
         z-index: 999;
+    }
+    .admin {
+        margin-top: -10vw;
     }
     .yellow-30deg {
         display: inline-block;
@@ -868,6 +895,13 @@ body {
     .white-sides-border {
         border: 0.4vw solid $white;
         border-radius: 2vw;
+        height: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #white-sides-border {
+        width: 60vw;
     }
     .white-mono {
         font-size: 3.5vw;
@@ -877,11 +911,11 @@ body {
         margin: 0 auto;
     }
     .royal-mono {
-        font-size: 3.5vw;
-        width: 90vw;
+        font-size: 4vw;
+        width: 60vw;
         font-weight: lighter;
         text-align: left;
-        margin: 4vw;
+        margin: 3vw auto;
     }
     .one,
     .two {
@@ -891,9 +925,9 @@ body {
         left: -35vw;
     }
     .center-royal {
-        width: 60vw;
+        width: 75vw;
         margin: 0 auto;
-        font-size: 3.5vw;
+        font-size: 4vw;
         padding-top: 6vw;
         span {
             font-weight: bolder;
