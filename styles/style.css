@@ -771,6 +771,10 @@ body {
   font-style: italic;
 }
 
+.section7 #center {
+  text-align: center;
+}
+
 .section7 .anonimo {
   display: -webkit-box;
   display: -ms-flexbox;
