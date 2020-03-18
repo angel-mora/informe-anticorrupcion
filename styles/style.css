@@ -719,7 +719,7 @@ body {
 }
 
 .section7 .mono {
-  font-size: 3.7vw;
+  font-size: 4vw;
   text-align: center;
 }
 
@@ -810,7 +810,7 @@ body {
 }
 
 .section7 .anonimo-text {
-  width: 55vw;
+  width: 70vw;
   text-align: left;
   margin: 0 auto;
   padding-bottom: 2vw;
@@ -822,8 +822,8 @@ body {
 }
 
 .section7 .yellow-center {
-  text-align: center;
-  width: 55vw;
+  text-align: left;
+  width: 70vw;
   margin: 0 auto;
   padding: 2vw;
   font-style: italic;
@@ -844,8 +844,12 @@ body {
   font-style: italic;
   font-weight: bold;
   width: 80vw;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
+}
+
+.section7 .center-pink-mono #position-center {
+  text-align: center;
 }
 
 .section7 .center-pink-mono .champ {
@@ -985,7 +989,7 @@ body {
   content: "";
   top: 14vw;
   left: 18vw;
-  border-top: 1vw solid #ffb33d;
+  border-top: 1.5vw solid #ffb33d;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   width: 65vw;
@@ -1104,7 +1108,7 @@ body {
 .section8 .white-sides-border {
   border: 0.4vw solid #fff;
   border-radius: 2vw;
-  height: 22vw;
+  height: 28vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1118,10 +1122,15 @@ body {
 
 .section8 #white-sides-border {
   width: 60vw;
+  font-size: 4.5vw;
+}
+
+.section8 #left {
+  text-align: left;
 }
 
 .section8 .white-mono {
-  font-size: 3.5vw;
+  font-size: 4vw;
   width: 80vw;
   font-weight: lighter;
   text-align: center;
@@ -1131,7 +1140,7 @@ body {
 .section8 .royal-mono {
   font-size: 4vw;
   width: 60vw;
-  font-weight: lighter;
+  font-weight: bold;
   text-align: left;
   margin: 3vw auto;
 }
