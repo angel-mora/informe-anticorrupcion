@@ -1059,7 +1059,7 @@ body {
 }
 
 // media query here
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 768px) {
     body {
       width: 60%;
       background-color: $royal;
@@ -1231,6 +1231,8 @@ body {
 
     .section3 {
         .background-white {
+            padding-bottom: 5vw;
+
             .champ {
                 font-size: 7.2vw;
                 padding: 3vw;
@@ -1243,7 +1245,8 @@ body {
             0 100%
             /* left bottom */
             );
-            padding-top: 2vw;
+            padding-top: 0;
+            margin-top: -4vw;
             .champ {
                 font-size: 7.2vw;
                 padding: 3vw;
@@ -1251,14 +1254,15 @@ body {
         }
         .mono {
             font-size: 2vw;
-            margin-top: -2vw;
-            margin-bottom: 2.4vw;
+            margin-top: -3vw;
+            margin-bottom: 2vw;
         }
     }
 
     .section4 {
         .section-head {
             font-size: 6vw;
+            margin-right: -4vw;
         }
         .wrapped-title {
             display: flex;
@@ -1274,10 +1278,9 @@ body {
             line-height: 1.2;
         }
         .pasos {
-            width: 13vw;
-            margin-top: 2.5vw;
+            width: 17vw;
             padding: 0.3vw 2vw;
-            margin-left: 0vw;
+            margin-left: 31vw;
             margin-top: -2.4vw;
             font-size: 2.5vw;
             font-weight: bolder;
@@ -1302,6 +1305,11 @@ body {
             transform: rotate(10deg);
             width: 30vw;
             z-index: 999;
+        }
+        ol {
+            margin-left: 8vw;
+            list-style: none;
+            margin-bottom: 4vw;
         }
         .one,
         .two,
